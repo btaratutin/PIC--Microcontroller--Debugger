@@ -1,0 +1,778 @@
+MPLINK 4.34, Linker
+Linker Map File - Created Fri Jan 15 17:13:03 2010
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+               _entry_scn       code   0x000000    program   0x000006
+                   .cinit    romdata   0x00002a    program   0x00000e
+         .code_usb_code.o       code   0x000038    program   0x000842
+             .code_main.o       code   0x00087a    program   0x00033e
+        .code_eeprom_rw.o       code   0x000bb8    program   0x0000e4
+               _cinit_scn       code   0x000c9c    program   0x00009e
+      .romdata_usb_code.o    romdata   0x000d3a    program   0x00008e
+     .code_ad_converter.o       code   0x000dc8    program   0x000038
+                    .code       code   0x000e00    program   0x000020
+             _startup_scn       code   0x000e20    program   0x00001c
+              D10TCYXCODE       code   0x000e3c    program   0x000016
+           .code___init.o       code   0x000e52    program   0x000002
+      .idata_usb_code.o_i    romdata   0x000e54    program   0x000000
+          .idata_main.o_i    romdata   0x000e54    program   0x00000d
+          .romdata_main.o    romdata   0x000e54    program   0x000000
+         .romdata_c018i.o    romdata   0x000e54    program   0x000000
+        .romdata___init.o    romdata   0x000e54    program   0x000000
+     .romdata_eeprom_rw.o    romdata   0x000e54    program   0x000000
+  .romdata_ad_converter.o    romdata   0x000e54    program   0x000000
+  .idata_ad_converter.o_i    romdata   0x000e61    program   0x000000
+     .idata_eeprom_rw.o_i    romdata   0x000e61    program   0x000000
+        .idata___init.o_i    romdata   0x000e61    program   0x000000
+         .idata_c018i.o_i    romdata   0x000e61    program   0x000000
+            .code_c018i.o       code   0x000e62    program   0x000000
+    .config_300000_main.o    romdata   0x300000    program   0x000001
+    .config_300001_main.o    romdata   0x300001    program   0x000001
+    .config_300002_main.o    romdata   0x300002    program   0x000001
+    .config_300003_main.o    romdata   0x300003    program   0x000001
+    .config_300005_main.o    romdata   0x300005    program   0x000001
+    .config_300006_main.o    romdata   0x300006    program   0x000001
+    .config_300008_main.o    romdata   0x300008    program   0x000001
+    .config_300009_main.o    romdata   0x300009    program   0x000001
+    .config_30000a_main.o    romdata   0x30000a    program   0x000001
+    .config_30000b_main.o    romdata   0x30000b    program   0x000001
+    .config_30000c_main.o    romdata   0x30000c    program   0x000001
+    .config_30000d_main.o    romdata   0x30000d    program   0x000001
+                 .tmpdata      udata   0x000000       data   0x000003
+                MATH_DATA      udata   0x000003       data   0x000002
+        .udata_usb_code.o      udata   0x000060       data   0x000018
+            .idata_main.o      idata   0x000078       data   0x00000d
+           .udata_c018i.o      udata   0x000085       data   0x00000a
+            .udata_main.o      udata   0x00008f       data   0x000009
+           .idata_c018i.o      idata   0x000098       data   0x000000
+        .idata_usb_code.o      idata   0x000098       data   0x000000
+    .udata_ad_converter.o      udata   0x000098       data   0x000000
+    .idata_ad_converter.o      idata   0x000098       data   0x000000
+       .udata_eeprom_rw.o      udata   0x000098       data   0x000000
+       .idata_eeprom_rw.o      idata   0x000098       data   0x000000
+          .udata___init.o      udata   0x000098       data   0x000000
+          .idata___init.o      idata   0x000098       data   0x000000
+                   .stack      udata   0x000300       data   0x000100
+USB_BUFFER_DESCRIPTOR_TABLE      udata   0x000400       data   0x000080
+              USB_BUFFERS      udata   0x000480       data   0x000010
+            SFR_UNBANKED0      udata   0x000f66       data   0x00009a
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000005      
+                            0x00002a    0x000e60      
+                            0x300000    0x300003      
+                            0x300005    0x300006      
+                            0x300008    0x30000d      
+            3657 out of 24856 program addresses used, program memory utilization is 14%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+             ADConversion   0x000dc8    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\extras\ad_converter.c
+            ClassRequests   0x0006e0    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+           Configuration1   0x000d4c    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+                    D10_1   0x000e4c    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
+                     D10x   0x000e44    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
+              Delay10TCYx   0x000e3c    program     extern C:\MCC18\src\traditional\delays\d10tcyx.asm
+                   Device   0x000d3a    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+               InitEEPROM   0x000bb8    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\Extras\eeprom_rw.c
+                  InitUSB   0x000038    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+           ProcessInToken   0x0007a0    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+          ProcessOutToken   0x0007dc    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+        ProcessSetupToken   0x000188    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+     ProcessVendorRequest   0x000916    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+     SendDescriptorPacket   0x000808    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+               ServiceUSB   0x000056    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+         StandardRequests   0x00021e    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+                  String0   0x000d5e    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+                  String1   0x000d62    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+                  String2   0x000d96    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+           VendorRequests   0x0006ea    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+        _D10TCYXCODE_000A   0x000e46    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x000e48    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x000e4a    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
+       ___return_lbl00000   0x000004    program     static                          
+       ___return_lbl00001   0x000e3a    program     static                          
+       ___return_lbl00002   0x000d38    program     static                          
+               __config_0   0x300000    program     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+               __config_1   0x300001    program     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+              __config_10   0x30000c    program     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+              __config_11   0x30000d    program     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+               __config_2   0x300002    program     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+               __config_3   0x300003    program     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+               __config_4   0x300005    program     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+               __config_5   0x300006    program     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+               __config_6   0x300008    program     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+               __config_7   0x300009    program     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+               __config_8   0x30000a    program     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+               __config_9   0x30000b    program     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+                   __init   0x000e52    program     extern C:\MCC18\src\traditional\stdclib\__init.c
+            __zero_memory   0x000e00    program     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                _do_cinit   0x000c9c    program     extern C:\MCC18\src\traditional\startup\c018i.c
+                   _entry   0x000000    program     extern C:\MCC18\src\traditional\startup\c018i.c
+                 _startup   0x000e20    program     extern C:\MCC18\src\traditional\startup\c018i.c
+                compare_l   0x000e16    program     static C:\MCC18\src\traditional\proc\p18F2455.asm
+                copy_loop   0x000d0e    program     static                          
+            copy_one_byte   0x000d14    program     static                          
+                     done   0x000d38    program     static                          
+             done_copying   0x000d22    program     static                          
+         eeprom_read_byte   0x000c7a    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\Extras\eeprom_rw.c
+        eeprom_write_byte   0x000c32    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\Extras\eeprom_rw.c
+                     loop   0x000e30    program     static                          
+                   loop_h   0x000e0e    program     static C:\MCC18\src\traditional\proc\p18F2455.asm
+                   loop_l   0x000e18    program     static C:\MCC18\src\traditional\proc\p18F2455.asm
+                     main   0x00087a    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+                     test   0x000cb6    program     static                          
+               zero_block   0x000e0e    program     static C:\MCC18\src\traditional\proc\p18F2455.asm
+                   ADCON0   0x000fc2       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+               ADCON0bits   0x000fc2       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   ADCON1   0x000fc1       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+               ADCON1bits   0x000fc1       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   ADCON2   0x000fc0       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+               ADCON2bits   0x000fc0       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    ADRES   0x000fc3       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   ADRESH   0x000fc4       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   ADRESL   0x000fc3       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  BAUDCON   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+              BAUDCONbits   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     BD0I   0x000404       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD0O   0x000400       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                    BD10I   0x000454       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                    BD10O   0x000450       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                    BD11I   0x00045c       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                    BD11O   0x000458       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                    BD12I   0x000464       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                    BD12O   0x000460       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                    BD13I   0x00046c       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                    BD13O   0x000468       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                    BD14I   0x000474       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                    BD14O   0x000470       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                    BD15I   0x00047c       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                    BD15O   0x000478       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD1I   0x00040c       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD1O   0x000408       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD2I   0x000414       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD2O   0x000410       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD3I   0x00041c       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD3O   0x000418       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD4I   0x000424       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD4O   0x000420       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD5I   0x00042c       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD5O   0x000428       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD6I   0x000434       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD6O   0x000430       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD7I   0x00043c       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD7O   0x000438       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD8I   0x000444       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD8O   0x000440       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD9I   0x00044c       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD9O   0x000448       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                      BSR   0x000fe0       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   CCP1AS   0x000fb6       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+               CCP1ASbits   0x000fb6       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  CCP1CON   0x000fbd       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+              CCP1CONbits   0x000fbd       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  CCP1DEL   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+              CCP1DELbits   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  CCP2CON   0x000fba       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+              CCP2CONbits   0x000fba       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    CCPR1   0x000fbe       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   CCPR1H   0x000fbf       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   CCPR1L   0x000fbe       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    CCPR2   0x000fbb       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   CCPR2H   0x000fbc       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   CCPR2L   0x000fbb       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    CMCON   0x000fb4       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                CMCONbits   0x000fb4       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   CVRCON   0x000fb5       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+               CVRCONbits   0x000fb5       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     DDRA   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 DDRAbits   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     DDRB   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 DDRBbits   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     DDRC   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 DDRCbits   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     DUTY   0x000077       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+                  ECCP1AS   0x000fb6       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+              ECCP1ASbits   0x000fb6       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 ECCP1DEL   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+             ECCP1DELbits   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    EEADR   0x000fa9       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   EECON1   0x000fa6       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+               EECON1bits   0x000fa6       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   EECON2   0x000fa7       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   EEDATA   0x000fa8       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+            EP0_IN_buffer   0x000488       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+           EP0_OUT_buffer   0x000480       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     FSR0   0x000fe9       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    FSR0H   0x000fea       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    FSR0L   0x000fe9       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     FSR1   0x000fe1       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    FSR1H   0x000fe2       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    FSR1L   0x000fe1       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     FSR2   0x000fd9       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    FSR2H   0x000fda       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    FSR2L   0x000fd9       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  HLVDCON   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+              HLVDCONbits   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    INDF0   0x000fef       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    INDF1   0x000fe7       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    INDF2   0x000fdf       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   INTCON   0x000ff2       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  INTCON2   0x000ff1       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+              INTCON2bits   0x000ff1       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  INTCON3   0x000ff0       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+              INTCON3bits   0x000ff0       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+               INTCONbits   0x000ff2       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     IPR1   0x000f9f       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 IPR1bits   0x000f9f       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     IPR2   0x000fa2       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 IPR2bits   0x000fa2       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     LATA   0x000f89       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 LATAbits   0x000f89       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     LATB   0x000f8a       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 LATBbits   0x000f8a       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     LATC   0x000f8b       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 LATCbits   0x000f8b       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   LVDCON   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+               LVDCONbits   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   OSCCON   0x000fd3       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+               OSCCONbits   0x000fd3       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  OSCTUNE   0x000f9b       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+              OSCTUNEbits   0x000f9b       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                       PC   0x000ff9       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                      PCL   0x000ff9       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   PCLATH   0x000ffa       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   PCLATU   0x000ffb       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     PIE1   0x000f9d       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 PIE1bits   0x000f9d       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     PIE2   0x000fa0       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 PIE2bits   0x000fa0       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     PIR1   0x000f9e       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 PIR1bits   0x000f9e       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     PIR2   0x000fa1       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 PIR2bits   0x000fa1       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   PLUSW0   0x000feb       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   PLUSW1   0x000fe3       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   PLUSW2   0x000fdb       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    PORTA   0x000f80       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                PORTAbits   0x000f80       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    PORTB   0x000f81       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                PORTBbits   0x000f81       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    PORTC   0x000f82       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                PORTCbits   0x000f82       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    PORTE   0x000f84       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                PORTEbits   0x000f84       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 POSTDEC0   0x000fed       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 POSTDEC1   0x000fe5       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 POSTDEC2   0x000fdd       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 POSTINC0   0x000fee       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 POSTINC1   0x000fe6       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 POSTINC2   0x000fde       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                      PR2   0x000fcb       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  PREINC0   0x000fec       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  PREINC1   0x000fe4       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  PREINC2   0x000fdc       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     PROD   0x000ff3       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    PRODH   0x000ff4       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    PRODL   0x000ff3       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     RCON   0x000fd0       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 RCONbits   0x000fd0       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    RCREG   0x000fae       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    RCSTA   0x000fab       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                RCSTAbits   0x000fab       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     SIGN   0x000003       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+                    SPBRG   0x000faf       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   SPBRGH   0x000fb0       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   SSPADD   0x000fc8       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   SSPBUF   0x000fc9       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  SSPCON1   0x000fc6       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+              SSPCON1bits   0x000fc6       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  SSPCON2   0x000fc5       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+              SSPCON2bits   0x000fc5       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  SSPSTAT   0x000fc7       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+              SSPSTATbits   0x000fc7       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   STATUS   0x000fd8       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+               STATUSbits   0x000fd8       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   STKPTR   0x000ffc       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+               STKPTRbits   0x000ffc       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    T0CON   0x000fd5       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                T0CONbits   0x000fd5       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    T1CON   0x000fcd       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                T1CONbits   0x000fcd       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    T2CON   0x000fca       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                T2CONbits   0x000fca       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    T3CON   0x000fb1       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                T3CONbits   0x000fb1       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   TABLAT   0x000ff5       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   TBLPTR   0x000ff6       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  TBLPTRH   0x000ff7       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  TBLPTRL   0x000ff6       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  TBLPTRU   0x000ff8       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    TMR0H   0x000fd7       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    TMR0L   0x000fd6       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    TMR1H   0x000fcf       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    TMR1L   0x000fce       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     TMR2   0x000fcc       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    TMR3H   0x000fb3       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    TMR3L   0x000fb2       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                      TOS   0x000ffd       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     TOSH   0x000ffe       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     TOSL   0x000ffd       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     TOSU   0x000fff       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    TRISA   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                TRISAbits   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    TRISB   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                TRISBbits   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    TRISC   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                TRISCbits   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    TXREG   0x000fad       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    TXSTA   0x000fac       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                TXSTAbits   0x000fac       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    UADDR   0x000f6e       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                UADDRbits   0x000f6e       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UCFG   0x000f6f       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 UCFGbits   0x000f6f       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UCON   0x000f6d       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 UCONbits   0x000f6d       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UEIE   0x000f6b       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 UEIEbits   0x000f6b       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UEIR   0x000f6a       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 UEIRbits   0x000f6a       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UEP0   0x000f70       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 UEP0bits   0x000f70       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UEP1   0x000f71       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    UEP10   0x000f7a       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                UEP10bits   0x000f7a       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    UEP11   0x000f7b       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                UEP11bits   0x000f7b       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    UEP12   0x000f7c       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                UEP12bits   0x000f7c       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    UEP13   0x000f7d       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                UEP13bits   0x000f7d       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    UEP14   0x000f7e       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                UEP14bits   0x000f7e       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    UEP15   0x000f7f       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                UEP15bits   0x000f7f       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 UEP1bits   0x000f71       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UEP2   0x000f72       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 UEP2bits   0x000f72       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UEP3   0x000f73       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 UEP3bits   0x000f73       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UEP4   0x000f74       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 UEP4bits   0x000f74       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UEP5   0x000f75       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 UEP5bits   0x000f75       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UEP6   0x000f76       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 UEP6bits   0x000f76       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UEP7   0x000f77       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 UEP7bits   0x000f77       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UEP8   0x000f78       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 UEP8bits   0x000f78       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UEP9   0x000f79       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 UEP9bits   0x000f79       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UFRM   0x000f66       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    UFRMH   0x000f67       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                UFRMHbits   0x000f67       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    UFRML   0x000f66       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                UFRMLbits   0x000f66       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                      UIE   0x000f69       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  UIEbits   0x000f69       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                      UIR   0x000f68       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  UIRbits   0x000f68       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                USB_USTAT   0x000075       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+              USB_USWSTAT   0x000076       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+      USB_address_pending   0x000070       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+          USB_buffer_data   0x000064       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+          USB_buffer_desc   0x000060       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+           USB_bytes_left   0x000073       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+          USB_curr_config   0x00006d       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+             USB_desc_ptr   0x000071       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+              USB_dev_req   0x00006f       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+        USB_device_status   0x00006e       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+          USB_error_flags   0x00006c       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+        USB_packet_length   0x000074       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+                    USTAT   0x000f6c       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                USTATbits   0x000f6c       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   WDTCON   0x000fd1       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+               WDTCONbits   0x000fd1       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     WREG   0x000fe8       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                __FPFLAGS   0x000004       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000004       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+                  __tmp_0   0x000000       data     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\Extras\eeprom_rw.c
+                  __tmp_0   0x000000       data     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+                  __tmp_0   0x000000       data     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+              blink_value   0x000080       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+                curr_byte   0x000088       data     static C:\MCC18\src\traditional\startup\c018i.c
+               curr_entry   0x00008a       data     static C:\MCC18\src\traditional\startup\c018i.c
+                 data_ptr   0x00008c       data     static C:\MCC18\src\traditional\startup\c018i.c
+            debug_message   0x000078       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+                   eeprom   0x000090       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+             eeprom_error   0x000083       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+      eeprom_return_index   0x000084       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+          eeprom_write_to   0x000082       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+              light_value   0x000081       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+                pot_value   0x00008f       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+                     prom   0x000085       data     static C:\MCC18\src\traditional\startup\c018i.c
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   _entry   0x000000    program     extern C:\MCC18\src\traditional\startup\c018i.c
+       ___return_lbl00000   0x000004    program     static                          
+                  InitUSB   0x000038    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+               ServiceUSB   0x000056    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+        ProcessSetupToken   0x000188    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+         StandardRequests   0x00021e    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+            ClassRequests   0x0006e0    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+           VendorRequests   0x0006ea    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+           ProcessInToken   0x0007a0    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+          ProcessOutToken   0x0007dc    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+     SendDescriptorPacket   0x000808    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+                     main   0x00087a    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+     ProcessVendorRequest   0x000916    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+               InitEEPROM   0x000bb8    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\Extras\eeprom_rw.c
+        eeprom_write_byte   0x000c32    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\Extras\eeprom_rw.c
+         eeprom_read_byte   0x000c7a    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\Extras\eeprom_rw.c
+                _do_cinit   0x000c9c    program     extern C:\MCC18\src\traditional\startup\c018i.c
+                     test   0x000cb6    program     static                          
+                copy_loop   0x000d0e    program     static                          
+            copy_one_byte   0x000d14    program     static                          
+             done_copying   0x000d22    program     static                          
+       ___return_lbl00002   0x000d38    program     static                          
+                     done   0x000d38    program     static                          
+                   Device   0x000d3a    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+           Configuration1   0x000d4c    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+                  String0   0x000d5e    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+                  String1   0x000d62    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+                  String2   0x000d96    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+             ADConversion   0x000dc8    program     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\extras\ad_converter.c
+            __zero_memory   0x000e00    program     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   loop_h   0x000e0e    program     static C:\MCC18\src\traditional\proc\p18F2455.asm
+               zero_block   0x000e0e    program     static C:\MCC18\src\traditional\proc\p18F2455.asm
+                compare_l   0x000e16    program     static C:\MCC18\src\traditional\proc\p18F2455.asm
+                   loop_l   0x000e18    program     static C:\MCC18\src\traditional\proc\p18F2455.asm
+                 _startup   0x000e20    program     extern C:\MCC18\src\traditional\startup\c018i.c
+                     loop   0x000e30    program     static                          
+       ___return_lbl00001   0x000e3a    program     static                          
+              Delay10TCYx   0x000e3c    program     extern C:\MCC18\src\traditional\delays\d10tcyx.asm
+                     D10x   0x000e44    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000A   0x000e46    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x000e48    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x000e4a    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
+                    D10_1   0x000e4c    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
+                   __init   0x000e52    program     extern C:\MCC18\src\traditional\stdclib\__init.c
+               __config_0   0x300000    program     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+               __config_1   0x300001    program     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+               __config_2   0x300002    program     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+               __config_3   0x300003    program     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+               __config_4   0x300005    program     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+               __config_5   0x300006    program     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+               __config_6   0x300008    program     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+               __config_7   0x300009    program     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+               __config_8   0x30000a    program     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+               __config_9   0x30000b    program     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+              __config_10   0x30000c    program     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+              __config_11   0x30000d    program     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+                  __tmp_0   0x000000       data     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+                  __tmp_0   0x000000       data     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\Extras\eeprom_rw.c
+                  __tmp_0   0x000000       data     static E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+                     SIGN   0x000003       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+                __FPFLAGS   0x000004       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000004       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+          USB_buffer_desc   0x000060       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+          USB_buffer_data   0x000064       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+          USB_error_flags   0x00006c       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+          USB_curr_config   0x00006d       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+        USB_device_status   0x00006e       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+              USB_dev_req   0x00006f       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+      USB_address_pending   0x000070       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+             USB_desc_ptr   0x000071       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+           USB_bytes_left   0x000073       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+        USB_packet_length   0x000074       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+                USB_USTAT   0x000075       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+              USB_USWSTAT   0x000076       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+                     DUTY   0x000077       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_code.c
+            debug_message   0x000078       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+              blink_value   0x000080       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+              light_value   0x000081       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+          eeprom_write_to   0x000082       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+             eeprom_error   0x000083       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+      eeprom_return_index   0x000084       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+                     prom   0x000085       data     static C:\MCC18\src\traditional\startup\c018i.c
+                curr_byte   0x000088       data     static C:\MCC18\src\traditional\startup\c018i.c
+               curr_entry   0x00008a       data     static C:\MCC18\src\traditional\startup\c018i.c
+                 data_ptr   0x00008c       data     static C:\MCC18\src\traditional\startup\c018i.c
+                pot_value   0x00008f       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+                   eeprom   0x000090       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\main.c
+                     BD0O   0x000400       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD0I   0x000404       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD1O   0x000408       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD1I   0x00040c       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD2O   0x000410       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD2I   0x000414       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD3O   0x000418       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD3I   0x00041c       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD4O   0x000420       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD4I   0x000424       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD5O   0x000428       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD5I   0x00042c       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD6O   0x000430       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD6I   0x000434       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD7O   0x000438       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD7I   0x00043c       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD8O   0x000440       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD8I   0x000444       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD9O   0x000448       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                     BD9I   0x00044c       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                    BD10O   0x000450       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                    BD10I   0x000454       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                    BD11O   0x000458       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                    BD11I   0x00045c       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                    BD12O   0x000460       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                    BD12I   0x000464       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                    BD13O   0x000468       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                    BD13I   0x00046c       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                    BD14O   0x000470       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                    BD14I   0x000474       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                    BD15O   0x000478       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                    BD15I   0x00047c       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+           EP0_OUT_buffer   0x000480       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+            EP0_IN_buffer   0x000488       data     extern E:\Users\Boris\Documents\Semester 3 - Sophomore Year - 2009\POE\EEprom_test\usb\usb_defs.h
+                    UFRML   0x000f66       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                UFRMLbits   0x000f66       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UFRM   0x000f66       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                UFRMHbits   0x000f67       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    UFRMH   0x000f67       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  UIRbits   0x000f68       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                      UIR   0x000f68       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  UIEbits   0x000f69       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                      UIE   0x000f69       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 UEIRbits   0x000f6a       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UEIR   0x000f6a       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UEIE   0x000f6b       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 UEIEbits   0x000f6b       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    USTAT   0x000f6c       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                USTATbits   0x000f6c       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 UCONbits   0x000f6d       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UCON   0x000f6d       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    UADDR   0x000f6e       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                UADDRbits   0x000f6e       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UCFG   0x000f6f       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 UCFGbits   0x000f6f       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 UEP0bits   0x000f70       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UEP0   0x000f70       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UEP1   0x000f71       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 UEP1bits   0x000f71       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 UEP2bits   0x000f72       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UEP2   0x000f72       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 UEP3bits   0x000f73       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UEP3   0x000f73       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UEP4   0x000f74       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 UEP4bits   0x000f74       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UEP5   0x000f75       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 UEP5bits   0x000f75       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 UEP6bits   0x000f76       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UEP6   0x000f76       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 UEP7bits   0x000f77       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UEP7   0x000f77       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 UEP8bits   0x000f78       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UEP8   0x000f78       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 UEP9bits   0x000f79       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     UEP9   0x000f79       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    UEP10   0x000f7a       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                UEP10bits   0x000f7a       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    UEP11   0x000f7b       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                UEP11bits   0x000f7b       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    UEP12   0x000f7c       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                UEP12bits   0x000f7c       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                UEP13bits   0x000f7d       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    UEP13   0x000f7d       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                UEP14bits   0x000f7e       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    UEP14   0x000f7e       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                UEP15bits   0x000f7f       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    UEP15   0x000f7f       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                PORTAbits   0x000f80       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    PORTA   0x000f80       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                PORTBbits   0x000f81       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    PORTB   0x000f81       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                PORTCbits   0x000f82       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    PORTC   0x000f82       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    PORTE   0x000f84       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                PORTEbits   0x000f84       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     LATA   0x000f89       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 LATAbits   0x000f89       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     LATB   0x000f8a       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 LATBbits   0x000f8a       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     LATC   0x000f8b       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 LATCbits   0x000f8b       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    TRISA   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     DDRA   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 DDRAbits   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                TRISAbits   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    TRISB   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                TRISBbits   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     DDRB   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 DDRBbits   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                TRISCbits   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    TRISC   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     DDRC   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 DDRCbits   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+              OSCTUNEbits   0x000f9b       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  OSCTUNE   0x000f9b       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 PIE1bits   0x000f9d       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     PIE1   0x000f9d       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 PIR1bits   0x000f9e       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     PIR1   0x000f9e       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 IPR1bits   0x000f9f       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     IPR1   0x000f9f       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 PIE2bits   0x000fa0       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     PIE2   0x000fa0       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 PIR2bits   0x000fa1       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     PIR2   0x000fa1       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 IPR2bits   0x000fa2       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     IPR2   0x000fa2       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   EECON1   0x000fa6       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+               EECON1bits   0x000fa6       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   EECON2   0x000fa7       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   EEDATA   0x000fa8       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    EEADR   0x000fa9       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                RCSTAbits   0x000fab       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    RCSTA   0x000fab       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                TXSTAbits   0x000fac       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    TXSTA   0x000fac       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    TXREG   0x000fad       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    RCREG   0x000fae       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    SPBRG   0x000faf       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   SPBRGH   0x000fb0       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    T3CON   0x000fb1       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                T3CONbits   0x000fb1       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    TMR3L   0x000fb2       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    TMR3H   0x000fb3       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                CMCONbits   0x000fb4       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    CMCON   0x000fb4       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+               CVRCONbits   0x000fb5       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   CVRCON   0x000fb5       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  ECCP1AS   0x000fb6       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+              ECCP1ASbits   0x000fb6       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   CCP1AS   0x000fb6       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+               CCP1ASbits   0x000fb6       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  CCP1DEL   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+              CCP1DELbits   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+             ECCP1DELbits   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 ECCP1DEL   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  BAUDCON   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+              BAUDCONbits   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+              CCP2CONbits   0x000fba       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  CCP2CON   0x000fba       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    CCPR2   0x000fbb       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   CCPR2L   0x000fbb       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   CCPR2H   0x000fbc       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  CCP1CON   0x000fbd       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+              CCP1CONbits   0x000fbd       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   CCPR1L   0x000fbe       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    CCPR1   0x000fbe       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   CCPR1H   0x000fbf       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+               ADCON2bits   0x000fc0       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   ADCON2   0x000fc0       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+               ADCON1bits   0x000fc1       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   ADCON1   0x000fc1       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   ADCON0   0x000fc2       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+               ADCON0bits   0x000fc2       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    ADRES   0x000fc3       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   ADRESL   0x000fc3       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   ADRESH   0x000fc4       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  SSPCON2   0x000fc5       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+              SSPCON2bits   0x000fc5       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  SSPCON1   0x000fc6       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+              SSPCON1bits   0x000fc6       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  SSPSTAT   0x000fc7       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+              SSPSTATbits   0x000fc7       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   SSPADD   0x000fc8       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   SSPBUF   0x000fc9       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                T2CONbits   0x000fca       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    T2CON   0x000fca       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                      PR2   0x000fcb       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     TMR2   0x000fcc       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                T1CONbits   0x000fcd       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    T1CON   0x000fcd       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    TMR1L   0x000fce       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    TMR1H   0x000fcf       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     RCON   0x000fd0       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 RCONbits   0x000fd0       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+               WDTCONbits   0x000fd1       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   WDTCON   0x000fd1       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+              HLVDCONbits   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+               LVDCONbits   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  HLVDCON   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   LVDCON   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   OSCCON   0x000fd3       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+               OSCCONbits   0x000fd3       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    T0CON   0x000fd5       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                T0CONbits   0x000fd5       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    TMR0L   0x000fd6       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    TMR0H   0x000fd7       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   STATUS   0x000fd8       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+               STATUSbits   0x000fd8       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     FSR2   0x000fd9       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    FSR2L   0x000fd9       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    FSR2H   0x000fda       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   PLUSW2   0x000fdb       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  PREINC2   0x000fdc       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 POSTDEC2   0x000fdd       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 POSTINC2   0x000fde       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    INDF2   0x000fdf       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                      BSR   0x000fe0       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    FSR1L   0x000fe1       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     FSR1   0x000fe1       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    FSR1H   0x000fe2       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   PLUSW1   0x000fe3       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  PREINC1   0x000fe4       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 POSTDEC1   0x000fe5       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 POSTINC1   0x000fe6       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    INDF1   0x000fe7       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     WREG   0x000fe8       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     FSR0   0x000fe9       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    FSR0L   0x000fe9       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    FSR0H   0x000fea       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   PLUSW0   0x000feb       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  PREINC0   0x000fec       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 POSTDEC0   0x000fed       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                 POSTINC0   0x000fee       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    INDF0   0x000fef       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  INTCON3   0x000ff0       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+              INTCON3bits   0x000ff0       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+              INTCON2bits   0x000ff1       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  INTCON2   0x000ff1       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   INTCON   0x000ff2       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+               INTCONbits   0x000ff2       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    PRODL   0x000ff3       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     PROD   0x000ff3       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                    PRODH   0x000ff4       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   TABLAT   0x000ff5       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   TBLPTR   0x000ff6       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  TBLPTRL   0x000ff6       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  TBLPTRH   0x000ff7       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                  TBLPTRU   0x000ff8       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                      PCL   0x000ff9       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                       PC   0x000ff9       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   PCLATH   0x000ffa       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   PCLATU   0x000ffb       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                   STKPTR   0x000ffc       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+               STKPTRbits   0x000ffc       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                      TOS   0x000ffd       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     TOSL   0x000ffd       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     TOSH   0x000ffe       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+                     TOSU   0x000fff       data     extern C:\MCC18\src\traditional\proc\p18F2455.asm
+
+
