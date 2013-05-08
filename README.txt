@@ -1,5 +1,9 @@
 PIC--Microcontroller--Debugger
 ==============================
+(Copied from Documentation.txt)
+(Intended for novices and "how to use" scenario)
+
+
 PIC-USB Debugger Documentation
 1.13.2010 
 Boris Taratutin
